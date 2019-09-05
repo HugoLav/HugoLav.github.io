@@ -1,0 +1,89 @@
+#entête, #menu, #contenu{
+padding:1px 0;
+}
+
+#entête {
+text-align:center;
+background-color: #D8BFD8; 
+}
+
+#main {
+max-with:960px;
+margin:auto;
+}
+
+#menu {
+float:left;
+width:240px;
+background-color:#D8BFD8; 
+/* background-color:#FF3366; */
+}
+
+#menu ul{
+list-style: none;
+}
+
+#menu li{
+padding-top: 0.7em; 
+/* padding-bottom: 1em; */
+}
+
+.adressFormat ul{ list-style: none;}
+.adressFormat li{ padding-top: 0.1em;}
+
+
+#menu a{
+color: black;
+text-decoration:none
+}
+
+#menu a:hover {
+text-decoration:none;
+background-color:#BA55D3;
+}
+
+#contenu {
+margin-left:245px;
+padding-left:10px ;
+padding-right:50px ;
+}
+
+
+body
+{    
+	font-family: Georgia, sans-serif;
+	font-size: large;
+	background-color: #FFFAF0;
+}
+
+h1{
+	font-size: larger;
+}
+
+h2{
+	font-size: larger;
+}
+
+li{
+padding-top: 0.5em; 
+/* padding-bottom: 1em; */
+}
+
+p
+{
+	text-align: justify;
+	/*text-indent : 2em;  Pour faire des alinéas */ 
+}
+
+#contenu a
+{
+color: #8B008B;
+/*color: #9400D3;*/
+text-decoration:none	
+}
+
+#contenu a:hover
+{
+text-decoration:none;
+background-color:#F5DEB3;
+}
