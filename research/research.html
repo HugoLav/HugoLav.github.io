@@ -26,50 +26,103 @@
 		<div id = "contenu">
 			<h2>Research interests</h2>
 			
-			<p>My main interest lies in calculus of variations, and more precisely on optimal transport theory and the geometry of the Wasserstein space. I am also interested in some applications of optimal transport. The specific directions I explore include:</p>
-			
-			<ul> 
-				<li>The Schrödinger problem and its link with trajectory inference and unbalanced optimal transport.</li>
-				<li>Harmonic mappings valued in the Wasserstein space and their applications.</li>
-				<li>The dynamical formulation of optimal transport and its numerical analysis.</li>
-				<li>Wasserstein distance between Lévy measures with applications in Bayesian nonparametrics.</li>
-				<li>Variational Mean Field Games and the incompressible Euler equations <em>à la</em> Brenier seen as optimal curves in the Wasserstein space.</li>
-			</ul>
-		
-		
-			<h2>List of publications</h2>
-			
+			<p>My main interest lies in calculus of variations, optimal transport and the geometry of the Wasserstein space, and some applications of optimal transport. Below is a list of publications organized by research themes:</p>
 			<ul>
-			
-				<li><a href = "https://cvgmt.sns.it/media/doc/paper/5469/counterexample_flow_v3.pdf">The flow map of the Fokker-Planck equation does not provide optimal transport</a>. HL and Filippo Santambrogio. 2022. <em>Accepted paper: Applied Mathematics Letters</em>..</li>
-			
-				<li><a href = "https://arxiv.org/pdf/2111.01666.pdf">Regularized unbalanced optimal transport as entropy minimization with respect to branching Brownian motion</a>. Aymeric Baradat and HL. 2021. <em>Preprint</em>.</li>
-			
-				<li><a href = "https://arxiv.org/pdf/2109.06646.pdf">A Wasserstein index of dependence for random measures</a>. Marta Catalano, HL, Antonio Lijoi and Igor Prünster. 2021. <em>Preprint</em>.</li>
-			
-				<li><a href = "https://arxiv.org/pdf/2107.09589.pdf">Convex functions defined on metric spaces are pulled back to subharmonic ones by harmonic maps</a>. HL, Léonard Monsaingeon, Luca Tamanini and Dmitry Vorotnikov. 2021. <em>Preprint</em>.</li>
-			
-				<li><a href = "https://arxiv.org/pdf/2102.09204.pdf">Towards a mathematical theory of trajectory inference</a>. HL*, Stephen Zhang*, Young-Heon Kim and Geoffrey Schiebinger. 2021. <em>Preprint</em>.</li>
-			
-				<li><a href = "https://arxiv.org/pdf/2004.10287.pdf">Hidden convexity in a problem of nonlinear elasticity</a>. Nassif Ghoussoub, Young-Heon Kim, HL and Aaron Zeff Palmer. 2020. <em>Accepted paper: SIAM Journal on Mathematical Analysis</em>.</li>
-				
-				<li><a href = "https://arxiv.org/pdf/1909.08790.pdf">Unconditional convergence for discretizations of dynamical optimal transport</a>. HL. 2019. <em>Accepted paper: Mathematics of Computations</em>.</li>
-			
-				<li><a href = "https://arxiv.org/pdf/1811.09147.pdf">New estimates on the regularity of the pressure in density-constrained Mean Field Games</a>. HL and Filippo Santambrogio. 2018. <em>Accepted paper: Journal of the London Mathematical Society</em>.</li>
-			
-				<li><a href = "https://arxiv.org/pdf/1809.07943.pdf">Total Variation Isoperimetric Profiles</a>. Daryl DeFord, HL, Zachary Schutzman and Justin Solomon. 2018. <em>Accepted paper: SIAM Journal on Applied Algebra and Geometry</em>.</li>
-				
-				<li><a href = "https://arxiv.org/pdf/1809.07083.pdf">Dynamical Optimal Transport on Discrete Surfaces</a> (<a href = "supplemental_DOTDS.pdf">supplemental</a>, <a href = "https://github.com/HugoLav/DynamicalOTSurfaces">code</a>). HL, Sebastian Claici, Edward Chien and Justin Solomon, 2018. <em>Accepted paper: SIGGRAPH Asia 2018</em>.</li>
-				
-				<li><a href = "https://arxiv.org/pdf/1712.07528.pdf">Harmonic mappings valued in the Wasserstein space</a>. HL. 2017. <em>Accepted paper: Journal of Functional Analysis</em>.</li>
-				
-				<li><a href = "https://arxiv.org/pdf/1705.05658.pdf">Optimal density evolution with congestion: L infinity bounds via flow interchange techniques and applications to variational Mean Field Games</a>. HL and Filippo Santambrogio.  2017. <em>Accepted paper: Communications in PDEs</em>.</li>
-				
-				<li><a href = "https://arxiv.org/pdf/1701.06391.pdf">Time-convexity of the entropy in the multiphasic formulation of the incompressible Euler equation</a>. HL. 2017. <em>Accepted paper: Calculus of Variations and PDEs</em>.</li>
-				 
+				<li><a href="#optimal_curves">Optimal curves of probability measures</a>.</li>
+				<li><a href="#optimal_mappings">Optimal mappings of probability measures</a>.</li>
+				<li><a href="#numerics">Numerical solution to the dynamical optimal transport problem</a>.</li>
+				<li><a href="#BNP">Optimal transport distances in Bayesian Nonparametrics</a>.</li>
+				<li><a href="#data_science">Optimal transport and calculus of variations in data science</a>.</li>
 			</ul>
+			<p>You can also find on this webpage <a href="#slides">slides</a> of the talks I have given.</p>
+			
+		
+				<a id="optimal_curves"></a>
+				<h3>Optimal curves of probability measures</h3>
+				
+				
+					<p>Optimal transport provides a natural way to interpolate between probability distributions, generating geodesics (that is, shortest paths) in the so-called Wasserstein space. I have studied some variations of this problem where one not only looks for the shortest path, but adds additional terms in the objective functional. Penalization of congestion yields model of fluid dynamics and is connected to Mean Field Games; allowing for growth terms leads to unbalanced optimal transport.</p>
+				
+					<ul>
+					
+						<li><a href = "https://arxiv.org/pdf/2111.01666.pdf">Regularized unbalanced optimal transport as entropy minimization with respect to branching Brownian motion</a>. Aymeric Baradat and HL. 2021. <em>Preprint</em>.</li>
+
+						<li><a href = "https://arxiv.org/pdf/1811.09147.pdf">New estimates on the regularity of the pressure in density-constrained Mean Field Games</a>. HL and Filippo Santambrogio. 2019. <em>Accepted paper: Journal of the London Mathematical Society</em>.</li>
+
+						<li><a href = "https://arxiv.org/pdf/1705.05658.pdf">Optimal density evolution with congestion: L infinity bounds via flow interchange techniques and applications to variational Mean Field Games</a>. HL and Filippo Santambrogio.  2018. <em>Accepted paper: Communications in PDEs</em>.</li>
+					
+						<li><a href = "https://arxiv.org/pdf/1701.06391.pdf">Time-convexity of the entropy in the multiphasic formulation of the incompressible Euler equation</a>. HL. 2017. <em>Accepted paper: Calculus of Variations and PDEs</em>.</li>
+
+					
+					</ul>
+
+				<a id="optimal_mappings"></a>
+				<h3>Optimal mappings of probability measures</h3>
+				
+					<p>An extension of the geodesic problem is to consider not curves valued in the Wasserstein space, but mappings: that is, probability measures depending on more than one parameter. I have worked on a definition of Dirichlet energy for such mappings proposed by Brenier, studied its minimizers (the harmonic mappings) and with collaborators we proposed an application to the theory of elasticy. This is related to analysis in non smooth spaces and the problem of harmonic metric valued mappings.</p>
+					
+					<ul>
+					
+						<li><a href = "https://arxiv.org/pdf/2107.09589.pdf">Convex functions defined on metric spaces are pulled back to subharmonic ones by harmonic maps</a>. HL, Léonard Monsaingeon, Luca Tamanini and Dmitry Vorotnikov. 2021. <em>Preprint</em>.</li>
+					
+						<li><a href = "https://arxiv.org/pdf/2004.10287.pdf">Hidden convexity in a problem of nonlinear elasticity</a>. Nassif Ghoussoub, Young-Heon Kim, HL and Aaron Zeff Palmer. 2021. <em>Accepted paper: SIAM Journal on Mathematical Analysis</em>.</li>
+				
+						<li><a href = "https://arxiv.org/pdf/1712.07528.pdf">Harmonic mappings valued in the Wasserstein space</a>. HL. 2019. <em>Accepted paper: Journal of Functional Analysis</em>.</li>
+					
+					</ul>
+
+
+				<a id="numerics"></a>
+				<h3>Numerical solution to the dynamical optimal transport problem</h3>
+				
+					<p>I have worked on the dynamical optimal transport problem (a.k.a. Benamou-Brenier formulation) and its numerical solution. I have proposed a new discretization of the problem on surfaces, and also done the analysis of the convergence of solutions to the discrete problems to the continuous one when the spatial and temporal step size vanish. </p>
+					
+					
+					<ul>
+					
+						<li><a href = "https://arxiv.org/pdf/1909.08790.pdf">Unconditional convergence for discretizations of dynamical optimal transport</a>. HL. 2021. <em>Accepted paper: Mathematics of Computations</em>.</li>
+
+						<li><a href = "https://arxiv.org/pdf/1809.07083.pdf">Dynamical Optimal Transport on Discrete Surfaces</a> (<a href = "supplemental_DOTDS.pdf">supplemental</a>, <a href = "https://github.com/HugoLav/DynamicalOTSurfaces">code</a>). HL, Sebastian Claici, Edward Chien and Justin Solomon, 2018. <em>Accepted paper: SIGGRAPH Asia 2018</em>.</li>
+				
+					</ul>
+	
+				<a id="BNP"></a>
+				<h3>Optimal transport distances in Bayesian Nonparametrics</h3>
+				
+					
+					<p>With collaborators in Bayesian statistics, we have been using optimal transport to define distances between Completely Random Measures. With the help of such distances, we are able to define a tractable index of dependence between Completely Random Vectors and evaluate the impact of the prior in a nonparametric setting.</p>
+					
+					
+					<ul>
+					
+						<li>Impact of the prior in Bayesian nonparametrics via Optimal transport on random measures. Marta Catalano and HL. 2022. <em>In preparation</em>.</li>
+					
+						<li><a href = "https://arxiv.org/pdf/2109.06646.pdf">A Wasserstein index of dependence for random measures</a>. Marta Catalano, HL, Antonio Lijoi and Igor Prünster. 2021. <em>Preprint</em>.</li>
+			
+					</ul>
+
+			
+				<a id="data_science"></a>
+				<h3>Optimal transport and calculus of variations in data science</h3>
+				
+					
+					<p>Below is a list of projects (unrelated one to the other) involving optimal transport and calculus of variations in data science, understood in a broad sense. In particular I have worked on the trajectory inference problem (reconstructing the law of a stochastic process from samples of its temporal marginals) and connected it to entropic optimal transport and the Schrödinger problem.</p>
+					
+					
+					<ul>
+					
+						<li><a href = "https://cvgmt.sns.it/media/doc/paper/5469/counterexample_flow_v3.pdf">The flow map of the Fokker-Planck equation does not provide optimal transport</a>. HL and Filippo Santambrogio. 2022. <em>Accepted paper: Applied Mathematics Letters</em>..</li>
+				
+						<li><a href = "https://arxiv.org/pdf/2102.09204.pdf">Towards a mathematical theory of trajectory inference</a>. HL*, Stephen Zhang*, Young-Heon Kim and Geoffrey Schiebinger. 2021. <em>Preprint</em>.</li>
 			
 			
+						<li><a href = "https://arxiv.org/pdf/1809.07943.pdf">Total Variation Isoperimetric Profiles</a>. Daryl DeFord, HL, Zachary Schutzman and Justin Solomon. 2019. <em>Accepted paper: SIAM Journal on Applied Algebra and Geometry</em>.</li>
+					
+			
+					</ul>
+			
+			
+			<a id="slides"></a>
 			<h2>Slides</h2>
 			
 			<p>Below are the slides of some talks I gave. As they were designed to go with an oral presentation, they may not be self sufficient.</p>
